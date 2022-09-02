@@ -20,5 +20,8 @@
       </mat-grid-tile>
     </mat-grid-list>
   </div>
-<app-dishdetail [dish]="selectedDish"></app-dishdetail>
+<app-dishdetail 
+  *ngIf="this.selectedDish"
+  
+  ></app-dishdetail>
 </div>

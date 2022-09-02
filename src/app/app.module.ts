@@ -14,6 +14,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { DishdetailComponent } from './dishdetail/dishdetail.component';
 import { CommonModule } from '@angular/common';
+import { DishService } from './services/dish.service';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,9 @@ import { CommonModule } from '@angular/common';
     MatCardModule,
     MatButtonModule,
   ],
-  providers: [],
+  providers: [
+    DishService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

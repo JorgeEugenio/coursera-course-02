@@ -9,13 +9,11 @@ import { DISHES } from '../shared/dishes';
   styleUrls: ['./dishdetail.component.scss']
 })
 export class DishdetailComponent implements OnInit {
-    @Input() dish!: _Dish;
-    selectedDish = DISHES[0]
+    @Input() dish!: Dish;
+    selectedDish!: Dish;
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.dish);
-    
   }
 
 }
