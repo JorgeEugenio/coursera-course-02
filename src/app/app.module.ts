@@ -15,12 +15,18 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { DishdetailComponent } from './dishdetail/dishdetail.component';
 import { CommonModule } from '@angular/common';
 import { DishService } from './services/dish.service';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import {MatIconModule} from '@angular/material/icon';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
-    DishdetailComponent
+    DishdetailComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
@@ -32,6 +38,7 @@ import { DishService } from './services/dish.service';
     MatGridListModule,
     MatCardModule,
     MatButtonModule,
+    MatIconModule,
   ],
   providers: [
     DishService
