@@ -18,6 +18,11 @@ import { DishService } from './services/dish.service';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import {MatIconModule} from '@angular/material/icon';
+import { AboutComponent } from './about/about.component';
+import { HomeComponent } from './home/home.component';
+import { ContactComponent } from './contact/contact.component';
+import { AppRoutingModule } from './app-routing/app-routing.module';
+import { PromotionService } from './services/promotion.service';
 
 
 @NgModule({
@@ -26,7 +31,10 @@ import {MatIconModule} from '@angular/material/icon';
     MenuComponent,
     DishdetailComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    AboutComponent,
+    HomeComponent,
+    ContactComponent
   ],
   imports: [
     CommonModule,
@@ -39,9 +47,11 @@ import {MatIconModule} from '@angular/material/icon';
     MatCardModule,
     MatButtonModule,
     MatIconModule,
+    AppRoutingModule
   ],
   providers: [
-    DishService
+    DishService,
+    PromotionService
   ],
   bootstrap: [AppComponent]
 })
