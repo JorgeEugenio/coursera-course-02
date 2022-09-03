@@ -21,7 +21,7 @@
     </mat-grid-list>
   </div>
 <app-dishdetail 
-  *ngIf="this.selectedDish"
-  
+  *ngIf="selectedDish"
+  [dish]="selectedDish"
   ></app-dishdetail>
 </div>

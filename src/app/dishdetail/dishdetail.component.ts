@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Dish, _Dish } from '../shared/dish';
+import { Dish } from '../shared/dish';
 import { DISHES } from '../shared/dishes';
 
 
@@ -10,7 +10,6 @@ import { DISHES } from '../shared/dishes';
 })
 export class DishdetailComponent implements OnInit {
     @Input() dish!: Dish;
-    selectedDish!: Dish;
   constructor() { }
 
   ngOnInit(): void {
