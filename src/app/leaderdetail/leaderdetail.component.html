@@ -1,0 +1,17 @@
+<div fxFlex>
+    <div fxLayout="column" fxLayout.gt-sm="row">
+        <div  fxFlex="10">
+            <mat-card-content>
+                <img height="80px" src={{leader.image}} alt={{leader.name}} style="border-radius: 50%;">
+            </mat-card-content>
+        </div>
+        <div  fxFlex="90">
+            <mat-card-content>
+                <mat-list-item >{{ leader.name}} {{leader.abbr}}</mat-list-item><br>
+                <mat-list-item >{{ leader.designation}} </mat-list-item><br>
+                <mat-list-item >{{ leader.description}} </mat-list-item> 
+            </mat-card-content>
+        </div>
+    </div>
+
+    </div>
